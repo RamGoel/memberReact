@@ -8,7 +8,6 @@ import {
 } from 'react-router-dom';
 import React from 'react';
 import App from './App';
-import Form from './Form';
 
 let id = 0;
 class Register extends React.Component {
