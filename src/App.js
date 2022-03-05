@@ -6,6 +6,7 @@ import './style.css';
 
 let id = 0;
 
+//Home Page Component
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -79,7 +80,7 @@ class App extends React.Component {
 
   sortStatus = (value) => {
     this.setState({
-      members: this.state.members.filter((members) => members.status == value),
+      members: this.state.members.sort((members) => members.status = 'Active'),
     });
   };
 
@@ -91,7 +92,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="mainScreen">
+      <div className="mainScreen" style={{ display: this.props.view }}>
         <div id="overLay"></div>
         <div className="header">
           <h2>{this.state.members.length} Team Members</h2>

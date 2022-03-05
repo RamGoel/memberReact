@@ -2,6 +2,9 @@ import ReactDOM from 'react-dom';
 import React from 'react';
 import App from './App';
 
+
+
+//The Member Row
 const Member = (props) => (
   <tr className="dashRow">
     <td>

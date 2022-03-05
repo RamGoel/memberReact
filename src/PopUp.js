@@ -2,6 +2,10 @@ import ReactDOM from 'react-dom';
 import React from 'react';
 import App from './App';
 
+
+
+
+//Add Member PopUp
 const PopUp = (props) => (
   <div style={{ display: props.display }}>
     <form action="#" className="memberForm">
